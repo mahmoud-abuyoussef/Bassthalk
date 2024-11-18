@@ -1,3 +1,2 @@
-# Bassthalk__Platform
-## Demo
-https://mahmoudabuyousef.github.io/Bassthalk__Platform/
+# Bassthalk
+## [Demo Link](https://mahmoud-abuyoussef.github.io/Bassthalk/)
