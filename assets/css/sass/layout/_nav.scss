@@ -1,0 +1,116 @@
+@use "../helpers/variables" as *;
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 8px !important;
+  border-bottom: 1px solid #ddd;
+  .logo {
+    margin-left: 50px;
+    img {
+      width: 70px;
+    }
+  }
+  // Ovarride Booststrap ul Margin
+  ul {
+    margin: 0 !important;
+  }
+  .nav__links,
+  .btn-links {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  nav {
+    padding: 10px 30px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    ul.btn-links {
+      display: block;
+      width: 75%;
+      li {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        a.well-study {
+          width: 190px;
+          background-color: $main_color;
+          color: #fff;
+          border-radius: 25px;
+          padding: 10px;
+          text-align: center;
+          margin-left: 100px;
+        }
+        a.login {
+          color: $main_color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding: 10px 30px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .nav__links {
+      display: flex;
+      li {
+        padding: 0 10px;
+      }
+      a {
+        color: $main_color;
+      }
+    }
+    ul.btn-links {
+      display: block;
+      width: 42%;
+      li {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        a.well-study {
+          width: 190px;
+          background-color: $main_color;
+          color: #fff;
+          border-radius: 25px;
+          padding: 10px;
+          text-align: center;
+          margin-left: 100px;
+        }
+        a.login {
+          color: $main_color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  main {
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      text-align: end;
+      .about {
+        padding: 30px;
+        width: 60%;
+        ul.btn-links {
+          li {
+            a {
+              display: inline-block;
+              margin: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
